@@ -5,7 +5,7 @@ from django.urls import reverse
 from .models import Snack
 
 
-class MovieTests(TestCase):
+class SnackTests(TestCase):
     def setUp(self):
         self.user = User.objects.create_user(username="tester", email="tester@email.com", password="pass")
 
