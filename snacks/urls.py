@@ -6,7 +6,7 @@ from .views import SnackListView, SnackDetailView, SnackCreateView, SnackUpdateV
 urlpatterns = [
     path("", SnackListView.as_view(), name="snack_list"),
     path("<int:pk>/", SnackDetailView.as_view(), name="snack_detail"),
-    path("new/", SnackCreateView.as_view(), name="snack_create"),
-    path("<int:pk>/edit", SnackUpdateView.as_view(), name="snack_update"),
-    path("<int:pk>/delete", SnackDeleteView.as_view(), name="snack_delete"),
+    # path("new/", SnackCreateView.as_view(), name="snack_create"),
+    # path("<int:pk>/edit", SnackUpdateView.as_view(), name="snack_update"),
+    # path("<int:pk>/delete", SnackDeleteView.as_view(), name="snack_delete"),
 ]
