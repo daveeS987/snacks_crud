@@ -1,7 +1,14 @@
 {% extends 'snacks/base.html' %}
 
 {% block title %}
+  Update
 {% endblock title %}
 
 {% block content %}
+  <h1>Update This Snack</h1>
+  <form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="EDIT">
+  </form>
 {% endblock content %}

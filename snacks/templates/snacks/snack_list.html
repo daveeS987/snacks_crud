@@ -12,4 +12,9 @@
       <h3><a href="{% url 'snack_detail' snack.pk %}">{{ snack.name }}</a></h3>
     {% endfor %}
   </section>
+
+  <div>
+    <h2>Add a new Snack to the List!!</h2>
+    <h3><a href="{% url 'snack_create' %}">Add</a></h3>
+  </div>
 {% endblock content %}

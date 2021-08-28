@@ -19,14 +19,17 @@ class SnackCreateView(CreateView):
     template_name = "snacks/snack_create.html"
     model = Snack
     fields = ["name", "description", "purchaser"]
+    success_url = reverse_lazy("snack_list")
 
 
 class SnackUpdateView(UpdateView):
     template_name = "snacks/snack_update.html"
     model = Snack
     fields = ["name", "description", "purchaser"]
+    success_url = reverse_lazy("snack_list")
 
 
 class SnackDeleteView(DeleteView):
     template_name = "snacks/snack_delete.html"
     model = Snack
+    success_url = reverse_lazy("snack_list")
